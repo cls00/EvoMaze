@@ -5,7 +5,7 @@ This project is a clone of the [Counter example in AssemblyScript](https://githu
 
 ## Description
 
-This contract implements some basic functions to create evolutionary contracts as it is custom in [Evolutionary Computation](https://en.wikipedia.org/wiki/Evolutionary_computation)
+This contract implements some basic functions to create evolutionary contracts as it is common in [Evolutionary Computation](https://en.wikipedia.org/wiki/Evolutionary_computation)
 
 The contract itself is a [Quine](https://en.wikipedia.org/wiki/Quine_(computing)) which is a program able to reproduce its own source code.
 
