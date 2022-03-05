@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+  <style>
+      #mainContent {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: xx-large;
+			font-weight: bold;
+			background-color: #0a1e54;
+			border-radius: 4px;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.buttonStyle {
+			border-radius: 4px;
+			border: thin solid #F0E020;
+			padding: 5px;
+			background-color: #F8F094;
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			font-weight: bold;
+			color: #663300;
+			width: 175px;
+			height: 100px;
+		}
+
+		.buttonStyle:hover {
+			border: thin solid #FFCC00;
+			background-color: #FCF9D6;
+			color: #996633;
+			cursor: pointer;
+		}
+
+		.buttonStyle:active {
+			border: thin solid #99CC00;
+			background-color: #F5FFD2;
+			color: #669900;
+			cursor: pointer;
+		}
+      
+    </style>
+</head>
+<body style="background: #eef2fe; font-family: 'Arvo', serif;">
+    
+    <div id="mainContent" class="center">
+
+		<button id="ShowContract" class="buttonStyle">Show Contract</button>        
+        <button id="Eval" class="buttonStyle">Build Maze</button>
+        <button id="Mutate" class="buttonStyle">Mutate Param</button>
+        <button id="Save" class="buttonStyle">Save Current</button>
+        <button id="TestButton" class="buttonStyle">Test Button</button>
+	</div>
+  <div style="text-align: center;">
+    <h1>Maze Gen</h1>
+
+    <div class="sign-in" style="display: none;">
+      <p>You'll need to sign in to call contract methods:</p>
+      <button class="btn btn-primary" style="background-color: #0072CE;">Sign In</button>
+    </div>
+
+    <div class="after-sign-in" style="display: none;">
+ 
+        <div id="show" class="number" ></div>
+        <div id="maze" ></div>
+        <div style="margin-top:50px;"></div>
+        <div class="sign-out">
+          <button class="btn btn-primary" style="background-color: #0072CE;">Sign Out</button>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
