@@ -22,8 +22,7 @@ let population = new PersistentVector<Relation>("pop");
 
 export function saveSeed(value: i32): void {
   const newSeed = storage.getPrimitive<i32>("seed", 0) + value;
-  storage.set<i32>("seed", newSeed);
-  logging.log("Seed has been changed to " + newSeed.toString() + " by " + context.sender);
+  storage.set<i32>("seed", newSeed);  
 }
 
 
@@ -31,6 +30,7 @@ export function addChild(child: i32): void {
     assert(child != getParent(), "Not a variant!");
     const relation = new Relation(child,getParent());
     population.push(relation);
+    logging.log("New relation created by " + context.sender);
 }
 
 

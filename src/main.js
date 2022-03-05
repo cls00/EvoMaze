@@ -115,7 +115,7 @@ document.querySelector('#Save').addEventListener('click', () => {
     contract.saveSeed({
         value
     }).then(updateUI);*/
-    contract.addChild({child}).then(console.log("relation created"));
+    contract.addChild({child}).then(result => {console.log(result)});
     
 });
 
